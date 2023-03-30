@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="OnLoad()">
+<h2>Profile: <span id="profile"></span></h2>
+</body>
+<script language="javascript" type="text/javascript">
+    function OnLoad() {
+        var query = window.location.href.split("?")[1];
+        var params = query.split("&");
+        var profile = params[0].split("=")[1];
+        var password = params[1].split("=")[1].split("#")[0];
+        /*document.getElementById("login").innerHTML = params[0].split("=")[1];
+        document.getElementById("password").innerHTML = params[1].split("=")[1].split("#")[0];*/
+        console.log(profile.charAt(0));
+        document.getElementById("profile").innerHTML = profile.charAt(0);
+    }
+</script>
+</html>

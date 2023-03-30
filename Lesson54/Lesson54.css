@@ -1,0 +1,31 @@
+h1{
+    font-style: oblique;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+}
+button{
+    color: white;
+}
+input, select{
+    display: block;
+    margin: 20px auto;
+}
+#formSignUp{
+}
+#login, #signUp, input, select{
+    background: #273b54;
+    border: none;
+    border-bottom: 2px white solid;
+    padding: 10px;
+}
+div.out{
+    background: #273b54;
+    margin: auto;
+    width: 400px;
+    height: 600px;
+}
+div.in{
+    position: center;
+}

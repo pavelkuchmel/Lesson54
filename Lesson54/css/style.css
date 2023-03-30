@@ -1,0 +1,39 @@
+body{
+    background-image: url("../resources/pic.jpg");
+    background-size: 1080px auto;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+form{
+    margin: 200px auto;
+    width: 400px;
+    text-align: center;
+}
+input, button{
+    border-radius: 10px;
+    background-color: rgba(32,178,170,.50);
+    border: none;
+    font-size: 25px;
+    transition-property: background-color;
+    transition-duration: 500ms;
+}
+input:hover, button:hover{
+    background-color: rgba(32,178,170,.80);
+}
+.text:focus{
+    background-color: rgba(32,178,170,.80);
+}
+.btn:active, button:active{
+    background-color: rgba(32,178,170,.99);
+}
+#btnHelp {
+    height: 70px;
+    width: 100px;
+    position: absolute;
+    bottom: -210%;
+    right: 12%;
+}
+#support{
+    text-align: center;
+}

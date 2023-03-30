@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Index page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--<script language="javascript" type="text/javascript">
+       document.location = "index.html?id=" + document.getElementById("login") + document.getElementById("password").value;
+</script>-->
+<form action="profile.html">
+  <p><input type="text" class="text" name="login" placeholder="Enter login" id="login"></p>
+  <p><input type="password" class="text" name="password" placeholder="Enter password" id="password"></p>
+  <p>
+    <button class="btn">Login</button>
+    <button class="btn">Registration</button>
+    <!--<input type="submit" class="btn" name="login" id="btnLogin" value="Login" formaction="http://localhost:63342/login.html">-->
+    <!--<input type="submit" class="btn" name="register" id="btnRegistration" value="Registration" formaction="http://localhost:63342/registration.html">-->
+  </p>
+</form>
+<button id="btnHelp" onclick="document.location='help.html'">Help</button>
+</body>
+</html>
