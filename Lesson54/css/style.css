@@ -10,13 +10,17 @@ form{
     width: 400px;
     text-align: center;
 }
+textarea:focus, input:focus, select:focus{
+    outline: none;
+}
 input, button{
     border-radius: 10px;
-    background-color: rgba(32,178,170,.50);
     border: none;
+    background-color: rgba(32,178,170,.50);
     font-size: 25px;
     transition-property: background-color;
     transition-duration: 500ms;
+    padding-left: 5px;
 }
 input:hover, button:hover{
     background-color: rgba(32,178,170,.80);

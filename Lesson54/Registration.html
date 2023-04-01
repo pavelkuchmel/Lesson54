@@ -3,8 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration</title>
+    <link rel="stylesheet" href="css/Registration.css">
 </head>
 <body>
+<div class="out">
+    <h1 id="registration"></h1>
+    <form action="TelephoneForm.html" method="get" id="form">
+        <input type="text" placeholder="" id="inputName" name="inputName">
+        <input type="text" placeholder="" id="inputSurname" name="inputSurname">
+        <input type="email" placeholder="email@gmail.com" id="inputEmail" name="inputEmail">
+        <div class="in">
+        <input type="date" class="inline">
+        <input type="radio" class="inline" name="gender" value="male" id="male">
+        <label for="male" id="labelMale"></label>
+        <input type="radio" class="inline" name="gender" value="female" id="female">
+        <label for="female" id="labelFemale"></label>
+        </div>
+        <input type="text" placeholder="" id="phonenumber" name="phonenumber">
+        <input type="submit" id="signUp" value="">
+    </form>
+</div>
 <script src="Registration.js"></script>
 </body>
 </html>

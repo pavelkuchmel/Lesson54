@@ -1,0 +1,56 @@
+div.out{
+    background: rgba(39, 59, 84, .99);
+    margin: 50px auto;
+    width: 40vw;
+    height: 80vh;
+    min-width: 200px;
+}
+div.in{
+    height: 70px;
+    margin: auto auto;
+    padding: 10px;
+}
+textarea:focus, input:focus, select:focus{
+    outline: none;
+}
+h1{
+    font-style: oblique;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-top: 50px;
+}
+label{
+    color: white;
+    font-family: 'Arial', sans-serif;
+    border-bottom: 2px white solid;
+    transition-property: background-color, opacity;
+    transition-duration: 500ms;
+}
+input{
+    display: block;
+    margin: 20px auto;
+    color: white;
+    background: rgba(39, 59, 84, 0);
+    border: none;
+    border-bottom: 2px white solid;
+    padding: 10px;
+    transition-property: background-color, opacity;
+    transition-duration: 500ms;
+}
+input[type=radio]{
+    margin-left: 10px;
+}
+.inline{
+    display: inline;
+}
+input:hover, label:hover{
+    opacity: 0.2;
+}
+input:focus{
+    opacity: 0.5;
+}
+#signUp:active{
+    opacity: 1;
+    background-color: rgba(47, 70, 98, 0.99);
+}

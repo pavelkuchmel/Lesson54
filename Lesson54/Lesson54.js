@@ -8,6 +8,7 @@ let langEN = document.getElementById('langEN');
 let langRU = document.getElementById('langRU');
 
 function toRU(){
+    document.getElementById('authorization').innerText = "Авторизация";
     document.getElementById('login').innerText = "Логин";
     document.getElementById('signUp').innerText = "Регистрация";
     document.querySelector('div.in1').style.minWidth = '173px';
@@ -25,6 +26,7 @@ function toRU(){
 }
 
 function toEN(){
+    document.getElementById('authorization').innerText = "Authorization";
     document.getElementById('login').innerText = "Login";
     document.getElementById('signUp').innerText = "SignUp";
     document.querySelector('div.in1').style.minWidth = '135px';
@@ -40,6 +42,7 @@ function toEN(){
     document.getElementById('btnLogin').setAttribute('value', 'Login');
 }
 
+toEN();
 formSignUp.hidden = true;
 
 login.addEventListener('click', function (){

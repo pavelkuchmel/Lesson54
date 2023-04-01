@@ -1,0 +1,7 @@
+div.out{
+    background: rgba(39, 59, 84, .99);
+    margin: 50px auto;
+    width: 40vw;
+    height: 80vh;
+    min-width: 200px;
+}
