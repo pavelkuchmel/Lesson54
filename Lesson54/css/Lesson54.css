@@ -1,7 +1,7 @@
 h1{
     font-style: oblique;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
     margin-top: 50px;
 }
@@ -16,7 +16,7 @@ textarea:focus, input:focus, select:focus{
 option{
     background: rgba(39, 59, 84, 99);
 }
-#login, #signUp, input, select{
+#login, #signUp, #langRU, #langEN, input, select{
     background: rgba(39, 59, 84, 0);
     border: none;
     border-bottom: 2px white solid;
@@ -29,10 +29,10 @@ option{
     transition-property: background-color;
     transition-duration: 50ms;
 }
-#login{
+#login, #langEN{
     margin-left: 2px;
 }
-#signUp{
+#signUp, #langRU{
     margin-left: 10px;
     opacity: 0.5;
 }
@@ -40,15 +40,19 @@ div.out{
     background: rgba(39, 59, 84, .99);
     margin: auto;
     width: 20vw;
-    height: 70vh;
+    height: 80vh;
     min-width: 200px;
 }
-div.in{
+div.in1, div.in2{
     width: 10vw;
     margin: auto;
     min-width: 135px;
 }
-input:hover, select:hover, #signUp:hover, #login:hover, option:hover{
+div.in2{
+    width: 8vw;
+    min-width: 95px;
+}
+input:hover, select:hover, #signUp:hover, #login:hover, #langEN:hover, #langRU:hover, option:hover{
     opacity: 0.2;
 }
 input:focus, option:focus{

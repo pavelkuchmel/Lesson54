@@ -7,26 +7,33 @@
 </head>
 <body>
 <div class="out">
-    <h1>Mystat</h1>
-    <div class="in">
+    <h1>Authorization</h1>
+    <div class="in1">
         <button id="login">Login</button>
         <button id="signUp">SignUp</button>
     </div>
-    <form action="" method="get" id="formSignUp">
-        <input type="text" placeholder="Login">
-        <input type="password" placeholder="Password">
-        <select id="select">
-            <option value="1" selected>Minsk</option>
-            <option value="2">NewYork</option>
-            <option value="3">Wroclaw</option>
+    <form action="Registration.html" method="get" id="formSignUp">
+        <input type="text" placeholder="Login" id="inputLogin" name="signLogin">
+        <input type="password" placeholder="Password" id="inputPassword" name="signPassword">
+        <select id="select" name="signCity">
+            <option value="1" id="optMinsk">Minsk</option>
+            <option value="2" id="optNewYork">NewYork</option>
+            <option value="3" id="optWroclaw">Wroclaw</option>
+            <option value="4" id="city" disabled selected hidden>City</option>
         </select>
+        <input type="hidden" value="EN" name="lang" id="signLang">
         <input type="submit" value="Sign Up" id="btnSignUp">
     </form>
-    <form action="" method="get" id="formLogin">
-        <input type="text" placeholder="Login" id="txtLogin">
-        <input type="password" placeholder="Password" id="txtPassword">
+    <form action="TelephoneForm.html" method="get" id="formLogin">
+        <input type="text" placeholder="Login" id="txtLogin" name="enterLogin">
+        <input type="password" placeholder="Password" id="txtPassword" name="enterPassword">
+        <input type="hidden" value="EN" name="lang" id="enterLang">
         <input type="submit" value="Login" id="btnLogin">
     </form>
+    <div class="in2">
+        <button id="langEN">EN</button>
+        <button id="langRU">RU</button>
+    </div>
 </div>
 <script src="Lesson54.js"></script>
 </body>
