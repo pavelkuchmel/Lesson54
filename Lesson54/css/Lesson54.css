@@ -1,0 +1,59 @@
+h1{
+    font-style: oblique;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+}
+input, select{
+    display: block;
+    margin: 20px auto;
+    color: white;
+}
+textarea:focus, input:focus, select:focus{
+    outline: none;
+}
+option{
+    background: rgba(39, 59, 84, 99);
+}
+#login, #signUp, input, select{
+    background: rgba(39, 59, 84, 0);
+    border: none;
+    border-bottom: 2px white solid;
+    padding: 10px;
+    color: white;
+    transition-property: background-color, opacity;
+    transition-duration: 500ms;
+}
+#btnLogin, #btnSignUp{
+    transition-property: background-color;
+    transition-duration: 50ms;
+}
+#login{
+    margin-left: 2px;
+}
+#signUp{
+    margin-left: 10px;
+    opacity: 0.5;
+}
+div.out{
+    background: rgba(39, 59, 84, .99);
+    margin: auto;
+    width: 20vw;
+    height: 70vh;
+    min-width: 200px;
+}
+div.in{
+    width: 10vw;
+    margin: auto;
+    min-width: 135px;
+}
+input:hover, select:hover, #signUp:hover, #login:hover, option:hover{
+    opacity: 0.2;
+}
+input:focus, option:focus{
+    opacity: 0.5;
+}
+#btnLogin:active, #btnSignUp:active{
+    background-color: rgba(47, 70, 98, 0.99);
+}
