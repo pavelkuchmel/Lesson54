@@ -6,25 +6,22 @@
     <link rel="stylesheet" href="TelephoneForm.css">
 </head>
 <body>
-<div class="out">
-    <h1 id="title"></h1>
-    <form method='GET'>
-        <b>Name</b> <input type="text" placeholder="Enter name" name="name" />
-        <br/><br/>
-        <input type="submit" value="Save" name="submit"/>
-        <input type="button" value="One more phone" onclick="add_click()" style="margin-left:50px"/>
-        <br/><br/>
-        Phone number
-        <input type="text" name="phone" id="ph" placeholder="Enter phone number" />
-        Phone type
+<form method='GET'>
+    <b id="b"></b> <input type="text" placeholder="" name="name" id="name"/>
+    <div>
+        <span id="spanPhoneNumber"></span>
+        <input type="text" name="phone" id="ph" placeholder=""/>
+        <span id="spanPhoneType"></span>
         <select name="type">
-            <option value="1" selected>Cellular</option>
+            <option value="1" selected></option>
             <option value="2">Home</option>
             <option value="3">Work</option>
         </select>
-        Priority <input type="radio" name="main" value="1" checked />
-    </form>
-</div>
+        <span id="spanPriority"></span><input type="radio" name="main" value="1" checked/>
+    </div>
+    <input type="submit" value="" name="submit" id="submit"/>
+    <input type="button" value="" id="btnOneMorePhone"/>
+</form>
 <script src="TelephoneForm.js"></script>
 </body>
 </html>
