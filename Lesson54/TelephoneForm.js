@@ -28,7 +28,15 @@ function toEN(){
 
 toEN();
 
-document.getElementById('btnOneMorePhone').addEventListener('click', function (event){
+let phoneCounter = 1;
 
+document.getElementById('btnOneMorePhone').addEventListener('click', function (event){
+    let linePhoneNumber = document.getElementById('addPhoneNumber');
+    let newPhoneNumber = linePhoneNumber.cloneNode(true);
+    linePhoneNumber.children[0].innerText = phoneCounter + '. ' + linePhoneNumber.children[0].innerText;
+    phoneCounter++;
+    newPhoneNumber.children[0].innerText = phoneCounter + '. ' + newPhoneNumber.children[0].innerText;
+    newPhoneNumber.children[]
+    document.forms[0].appendChild(newPhoneNumber);
 });
 
